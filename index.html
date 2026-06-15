@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBUXVAULT MARKET</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#00f5ff;
+--secondary:#ff00c8;
+--dark:#050505;
+--card:#101010;
+--text:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#050505;
+color:white;
+font-family:Poppins,sans-serif;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
+url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600");
+background-size:cover;
+background-position:center;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+}
+
+.logo{
+font-family:Orbitron;
+font-size:32px;
+font-weight:800;
+color:var(--primary);
+text-shadow:0 0 15px var(--primary);
+}
+
+.menu{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.menu a{
+text-decoration:none;
+color:white;
+}
+
+.hero-content{
+text-align:center;
+padding-top:120px;
+}
+
+.hero-content h1{
+font-family:Orbitron;
+font-size:80px;
+line-height:1;
+}
+
+.hero-content h1 span{
+color:var(--primary);
+text-shadow:0 0 25px var(--primary);
+}
+
+.hero-content p{
+margin-top:25px;
+font-size:20px;
+color:#cfcfcf;
+}
+
+.hero-btn{
+margin-top:40px;
+}
+
+.btn{
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+display:inline-block;
+margin:10px;
+font-weight:700;
+}
+
+.btn-main{
+background:var(--primary);
+color:black;
+}
+
+.btn-alt{
+border:2px solid var(--primary);
+color:var(--primary);
+}
+
+.live{
+margin-top:50px;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.live-box{
+background:rgba(255,255,255,.05);
+padding:20px 35px;
+border-radius:20px;
+backdrop-filter:blur(8px);
+}
+
+.live-box h2{
+color:var(--primary);
+}
+
+/* CATEGORY */
+
+.category{
+padding:70px 8%;
+}
+
+.section-title{
+font-family:Orbitron;
+font-size:42px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.cat-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.cat{
+background:var(--card);
+padding:30px;
+border-radius:20px;
+text-align:center;
+border:1px solid #222;
+transition:.3s;
+}
+
+.cat:hover{
+transform:translateY(-8px);
+border-color:var(--primary);
+}
+
+/* PRODUCTS */
+
+.products{
+padding:20px 8% 80px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.card{
+background:var(--card);
+border-radius:25px;
+overflow:hidden;
+border:1px solid #1f1f1f;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(0,245,255,.25);
+}
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.content{
+padding:20px;
+}
+
+.rank{
+background:linear-gradient(90deg,#00f5ff,#ff00c8);
+display:inline-block;
+padding:6px 12px;
+border-radius:30px;
+font-size:12px;
+font-weight:bold;
+margin-bottom:12px;
+}
+
+.price{
+font-size:32px;
+font-weight:800;
+color:#00ff88;
+margin:15px 0;
+}
+
+.buy{
+display:block;
+background:var(--primary);
+color:black;
+text-align:center;
+padding:14px;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+}
+
+/* FOOTER */
+
+footer{
+background:#0b0b0b;
+padding:70px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.footer-title{
+font-family:Orbitron;
+margin-bottom:15px;
+color:var(--primary);
+}
+
+.social a{
+display:block;
+color:white;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+.disclaimer{
+margin-top:40px;
+padding:25px;
+background:#111;
+border-left:4px solid var(--primary);
+line-height:1.8;
+color:#d5d5d5;
+}
+
+.copy{
+text-align:center;
+margin-top:25px;
+color:#888;
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<nav>
+<div class="logo">ROBUXVAULT</div>
+
+<ul class="menu">
+<li><a href="#">Home</a></li>
+<li><a href="#">Catalog</a></li>
+<li><a href="#">Limited</a></li>
+<li><a href="#">OG Account</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero-content">
+
+<h1>
+LEVEL UP<br>
+<span>YOUR ROBLOX ACCOUNT</span>
+</h1>
+
+<p>
+Premium Accounts • Rare Inventory • Verified Seller • Instant Delivery
+</p>
+
+<div class="hero-btn">
+<a href="#" class="btn btn-main">LIHAT KATALOG</a>
+<a href="#" class="btn btn-alt">JOIN DISCORD</a>
+</div>
+
+<div class="live">
+
+<div class="live-box">
+<h2>5.412+</h2>
+<p>Sold Accounts</p>
+</div>
+
+<div class="live-box">
+<h2>2.840+</h2>
+<p>Happy Buyers</p>
+</div>
+
+<div class="live-box">
+<h2>4.9★</h2>
+<p>Store Rating</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="category">
+
+<h2 class="section-title">POPULAR CATEGORY</h2>
+
+<div class="cat-grid">
+
+<div class="cat">👑 Sultan Account</div>
+<div class="cat">💎 Limited Item</div>
+<div class="cat">🔥 Rich Inventory</div>
+<div class="cat">🏆 OG Account</div>
+<div class="cat">🚀 Premium Member</div>
+<div class="cat">🎮 Rare Collection</div>
+
+</div>
+
+</section>
+
+<section class="products">
+
+<h2 class="section-title">FEATURED CATALOG</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200">
+<div class="content">
+<div class="rank">TOP #1 SELLER</div>
+<h3>Sultan Account Ultimate</h3>
+<p>300+ Premium Item • Rare Avatar</p>
+<div class="price">Rp 8.990.000</div>
+<a href="#" class="buy">BELI SEKARANG</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200">
+<div class="content">
+<div class="rank">LIMITED EDITION</div>
+<h3>Rare Limited Collection</h3>
+<p>Exclusive Inventory Bundle</p>
+<div class="price">Rp 6.450.000</div>
+<a href="#" class="buy">BELI SEKARANG</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=1200">
+<div class="content">
+<div class="rank">VERIFIED ACCOUNT</div>
+<h3>OG Account 2015</h3>
+<p>Old Badge & Historic Collection</p>
+<div class="price">Rp 12.250.000</div>
+<a href="#" class="buy">BELI SEKARANG</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3 class="footer-title">ROBUXVAULT</h3>
+<p>
+Marketplace katalog akun Roblox premium dengan koleksi akun langka dan inventory bernilai tinggi.
+</p>
+</div>
+
+<div>
+<h3 class="footer-title">Quick Menu</h3>
+<p>Home</p>
+<p>Catalog</p>
+<p>Premium Account</p>
+<p>Limited Collection</p>
+</div>
+
+<div>
+<h3 class="footer-title">Social Media</h3>
+
+<div class="social">
+<a href="#">📸 Instagram</a>
+<a href="#">📘 Facebook</a>
+<a href="#">🎮 Discord</a>
+<a href="#">💬 WhatsApp</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="disclaimer">
+<b>DISCLAIMER</b><br><br>
+
+Website ini hanya berfungsi sebagai katalog digital untuk menampilkan informasi produk yang tersedia. Seluruh transaksi dilakukan atas tanggung jawab pihak yang terlibat. Harga, stok, dan ketersediaan produk dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya. Nama, logo, dan aset Roblox merupakan milik pemegang hak terkait dan digunakan hanya untuk tujuan identifikasi produk.
+</div>
+
+<div class="copy">
+© 2026 ROBUXVAULT MARKETPLACE — ALL RIGHTS RESERVED
+</div>
+
+</footer>
+
+</body>
+</html>
